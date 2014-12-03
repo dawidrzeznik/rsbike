@@ -1,0 +1,264 @@
+
+
+@import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+
+body
+{
+    margin: 5em;
+}
+
+.social-icons
+{
+    list-style-type: none;
+    margin: 0 auto 20px;
+    padding: 0;
+    width: 250px;
+    height: 100px;
+}
+
+.tab
+{
+    margin-right: 10px;
+    border-radius: 0 0 25px 25px;
+    float: left;
+    top: 10px;
+}
+
+.circle
+{
+    padding: 10px 10px;
+    width: 20px;
+    font-size: 20px;
+    text-align: center;
+    background: #fff;
+    border-radius: 20px;
+    border: solid 1px;
+}
+
+.fa-facebook
+{
+    color: hsl(221, 44%, 41%);
+    border-color: hsl(221, 44%, 41%);
+}
+
+.fa-facebook:hover
+{
+    background-color: hsl(221, 44%, 41%);
+}
+
+.fa-twitter
+{
+    color: hsl(195, 100%, 60%);
+    border-color: hsl(195, 100%, 60%);
+}
+
+.fa-twitter:hover
+{
+    background-color: hsl(195, 100%, 60%);
+}
+
+.fa-google-plus
+{
+    color: hsl(7, 71%, 55%);
+    border-color: hsl(7, 71%, 55%);
+}
+
+.fa-google-plus:hover
+{
+    background-color: hsl(7, 71%, 55%);
+}
+
+.fa-linkedin
+{
+    color: hsl(199, 85%, 36%);
+    border-color: hsl(199, 85%, 36%);
+}
+
+.fa-linkedin:hover
+{
+    background-color: hsl(199, 85%, 36%);
+}
+
+.fa-facebook:hover, .fa-twitter:hover, .fa-google-plus:hover, .fa-linkedin:hover
+{
+    color: hsl(0, 0%, 100%);
+}
+
+.screen-reader
+{
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+}
+
+.shadow .tab
+{
+    background: none;
+}
+
+.shadow .circle
+{
+    box-shadow: 1px 1px 3px hsla(0, 0%, 0%, .4);
+}
+
+.shadow .fa-facebook,
+.shadow .fa-twitter,
+.shadow .fa-google-plus,
+.shadow .fa-linkedin
+{
+    border-color: hsl(0, 0%, 100%);
+    border: none;
+    padding: 11px;
+}
+
+.squares .tab
+{
+    background: none;
+}
+
+.square
+{
+    padding: 9px 9px;
+    width: 50px;
+    font-size: 20px;
+    text-align: center;
+    background: #fff;
+}
+
+.fa-facebook.square
+{
+    background-color: hsl(221, 44%, 41%);
+    border: 1px solid hsl(221, 44%, 41%);
+    color: #fff;
+}
+
+.fa-facebook.square:hover
+{
+    background-color: hsl(0, 0%, 100%);
+    border-color: hsl(221, 44%, 41%);
+    color: hsl(221, 44%, 41%);
+}
+
+.fa-twitter.square
+{
+    background-color: hsl(195, 100%, 60%);
+    border: 1px solid hsl(195, 100%, 60%);
+    color: #fff;
+}
+
+.fa-twitter.square:hover
+{
+    background-color: hsl(0, 0%, 100%);
+    border-color: hsl(195, 100%, 60%);
+    color: hsl(195, 100%, 60%);
+}
+
+.fa-google-plus.square
+{
+    background-color: hsl(7, 71%, 55%);
+    border: 1px solid hsl(7, 71%, 55%);
+    color: #fff;
+}
+
+.fa-google-plus.square:hover
+{
+    background-color: hsl(0, 0%, 100%);
+    border-color: hsl(7, 71%, 55%);
+    color: hsl(7, 71%, 55%);
+}
+
+.fa-linkedin.square
+{
+    background-color: hsl(199, 85%, 36%);
+    border: 1px solid hsl(199, 85%, 36%);
+    color: #fff;
+}
+
+.fa-linkedin.square:hover
+{
+    background-color: hsl(0, 0%, 100%);
+    border-color: hsl(199, 85%, 36%);
+    color: hsl(199, 85%, 36%);
+}
+
+.oferta-wymiary
+{
+    left: 350px;
+}
+
+.wymiary-slajdy
+{
+    width: 1024px;
+    height: 500px;
+}
+
+
+
+body
+{
+    #padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.toolbar-marginesy
+{
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.text-wymiary
+{
+    margin: 10px;
+    position: relative;
+    max-width: 1024px;
+}
+
+.kolumny-marginesy
+{
+    margin: 20px;
+}
+
+.footer-color
+{
+    color: #f9f9f9;
+    background-color: #2c2929;
+}
+
+.body-color
+{
+    background-color: #e6f1f9;
+}
+
+.social-wymiary
+{
+    position: absolute;
+    width: 1024px;
+    left: 0px;
+}
+
+.lukasz-wymiar
+{
+    top: 110px;
+}
+
+.socialiscon-wymiary
+{
+    position: relative;
+    top: 70px;
+}
+
+.list-color
+{
+    background-color: #0a0000;
+    position: relative;
+    height: 150px;
+    color: #f3f3f3;
+}
+
+.wymiar-slajdy
+{
+    width: 1000px;
+    margin-left: 50px;
+    margin-right: 20px;
+}
+
