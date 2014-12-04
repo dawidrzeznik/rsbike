@@ -1,0 +1,211 @@
+<?php
+/**
+ * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
+ * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
+ *
+ * Licensed under The MIT License
+ * For full copyright and license information, please see the LICENSE.txt
+ * Redistributions of files must retain the above copyright notice.
+ *
+ * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
+ * @link          http://cakephp.org CakePHP(tm) Project
+ * @package       app.View.Layouts
+ * @since         CakePHP(tm) v 0.10.0.1076
+ * @license       http://www.opensource.org/licenses/mit-license.php MIT License
+ */
+
+$cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework');
+$cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+    <title>Jumbotron Template for Bootstrap</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/social-buttons.css" rel="stylesheet">
+    <link href="css/social-buttons3.css" rel="stylesheet">
+    <link href="css/social-buttons3.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/font-awesome.mini.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="mycss.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="">
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse">
+            <form class="navbar-form navbar-right" role="form">
+                <div class="form-group">
+                    <input type="text" placeholder="Email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password" class="form-control toolbar-marginesy">
+                </div>
+                <button type="button" class="btn btn-default btn-info toolbar-marginesy">Zaloguj</button>
+                <button type="submit" class="btn btn-success toolbar-marginesy">Zarejestruj</button>
+            </form>
+            <ul class="nav nav-tabs">
+                <li class="active">
+                    <a href="#">Strona główna</a>
+                </li>
+                <li>
+                    <a href="#">Profil</a>
+                </li>
+                <li>
+                    <a href="#">Oferta</a>
+                </li>
+                <li>
+                    <a href="#">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+        <!--/.navbar-collapse -->
+    </div>
+</div>
+<div id="carousel1" class="carousel slide kolumny-marginesy wymiar-slajdy" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel1" data-slide-to="1"></li>
+        <li data-target="#carousel1" data-slide-to="2"></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="img/Hero-1-2000x500.jpg" alt=""/>
+            <div class="carousel-caption">
+                <h3>Slide 1 title</h3>
+                <p>Slide 1 description.</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/image_thumb_abcweb.jpg" alt=""/>
+            <div class="carousel-caption">
+                <h3>Slide 2 title</h3>
+                <p>Slide 2 description.</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/slider-bike.jpg" alt=""/>
+            <div class="carousel-caption">
+                <h3>Slide 3 title</h3>
+                <p>Slide 3 description.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel1" data-slide="prev"></a>
+    <a class="right carousel-control" href="#carousel1" data-slide="next"></a>
+</div>
+<div class="container text-wymiary kolumny-marginesy">
+    <div class="row kolumny-marginesy text-wymiary toolbar-marginesy">
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="img/bike-3-256%20(1).png" alt="">
+                <div class="caption">
+                    <h3>Rowery</h3>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <a href="#" class="btn btn-default" role="button">Sprawdz</a>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="img/com.google.android.apps.offers.png" alt="">
+                <div class="caption">
+                    <h3>Oferta</h3>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p><a href="#" class="btn btn-default" role="button">Oferta</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="img/google_contacts.png" alt="">
+                <div class="caption">
+                    <h3>Kontakt</h3>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p><a href="#" class="btn btn-default" role="button">Button</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr/>
+   <!-- <div class="row kolumny-marginesy">
+        <span class="label label-default">News</span>
+        <ul class="media-list">
+            <li class="media">
+                <a class="pull-left" href="#">
+                    <img class="media-object" src="img/Greame-Brown.jpg" width="100">
+                </a>
+                <div class="media-body">
+                    <h1 class="title" style="margin-top: 0px; margin-bottom: 0px; padding: 0px; font-size: 2em; line-height: normal; font-family: Arial; font-weight: bold; letter-spacing: -0.08em; color: rgb(51, 51, 51);">Greame Brown wzmocni Drapac Pro Cycling<p style="margin-bottom: 15px; padding: 0px; font-family: Arial, Helvetica; font-size: 12px; font-weight: normal; letter-spacing: normal; line-height: 21.609001159668px;"><strong style="margin: 0px; padding: 0px;">Drużyna Drapac Pro Cycling podpisała kontrakt z Greamem Brownem. Doświadczony sprinter większość swojej kariery spędził w Rabobanku, a ostatnio w barwach Belkin Pro Cycling.</strong></p><p style="margin-bottom: 15px; padding: 0px; font-family: Arial, Helvetica; font-size: 12px; font-weight: normal; letter-spacing: normal; line-height: 21.609001159668px;">Australijczyk bez wątpienia będzie jednym z najlepszych sprinterów w szeregach pro-kontynentalnej drużyny, która od nowego roku planuje więcej startów w Europie. 35-latek niezmiennie od sezonu 2006 pozostawał na szczeblu WorldTour w składzie najlepszego, holenderskiego zespołu.</p><p style="margin-bottom: 15px; padding: 0px; font-family: Arial, Helvetica; font-size: 12px; font-weight: normal; letter-spacing: normal; line-height: 21.609001159668px;">W tym czasie wygrał m.in jeden etap na Tour de Pologne i Tour of California, dziewięć na Tour de Langkawi oraz klasyk Nokere-Koerse.</p></h1>
+                </div>
+            </li>
+            <hr/>
+            <li class="media">
+                <a class="pull-left" href="#">
+                    <img class="media-object" src="img/Vittoria.png" width="100">
+                </a>
+                <div class="media-body">
+                    <h1 class="title" style="margin-top: 0px; margin-bottom: 0px; padding: 0px; font-size: 2em; line-height: normal; font-family: Arial; font-weight: bold; letter-spacing: -0.08em; color: rgb(51, 51, 51);">Vittoria wkracza na rynek kół!<p style="margin-bottom: 15px; padding: 0px; font-family: Arial, Helvetica; font-size: 12px; font-weight: normal; letter-spacing: normal; line-height: 21.609001159668px;"><strong style="margin: 0px; padding: 0px;">Vittoria Industries Ltd. to właściciel takich marek jak Vittoria i Geax, doskonale znanych wśród kolarzy. Ich opony od lat święcą triumfy w światowym peletonie, jak i na górskich zboczach. Niewiele jednak osób wie, ze włoski producent od niedawna ma w swojej ofercie również koła i obręcze własnej produkcji.</strong></p><p style="margin-bottom: 15px; padding: 0px; font-family: Arial, Helvetica; font-size: 12px; font-weight: normal; letter-spacing: normal; line-height: 21.609001159668px;">Doświadczenie zdobyte podczas dystrybucji kół Mavica, zwróciło ich szczególną uwagę na problemy z kompatybilnością pomiędzy obręczami a oponami. Dodatkowo, prowadząc serwis na etapach takich wyścigów jak Giro d’italia, poznali potrzeby zawodowych kolarzy. Właśnie to skłoniło ich do podjęcia produkcji.</p><p style="margin-bottom: 15px; padding: 0px; font-family: Arial, Helvetica; font-size: 12px; font-weight: normal; letter-spacing: normal; line-height: 21.609001159668px;">W ofercie szosowej, znalazło się 8 modeli, których cena zaczyna się od 199£, a kończy na 1,499£. Wszystkie z nich, zostały zaprojektowane przez Vittorię, a za kontrole jakości odpowiedzialni są ich właśni inżynierowie. To bardzo dobra informacja. Warto również nadmienić, że produkcja najwyższych modeli karbonowych odbywa się we Włoszech, pozostałe natomiast produkowane są w tajwańskiej fabryce.</p><p style="margin-bottom: 15px; padding: 0px; font-family: Arial, Helvetica; font-size: 12px; font-weight: normal; letter-spacing: normal; line-height: 21.609001159668px;">Wszystkie modele używają łożysk japońskiej firmy EZO Bearings oraz szprych Sapim według projektu Vittorii. Miłym akcentem są również pokrowce oraz narzędzie do regulacji dołączane do każdego modelu.</p></h1>
+                </div>
+            </li>
+        </ul>
+    </div>-->
+    <hr/>
+    <ul class="social-icons squares wymiary-social social-wymiary list-color">
+        <div class="col-md-4 lukasz-wymiar">
+            <h6><i>2014 Łukasz Skiba</i></h6>
+        </div>
+        <div class="col-md-4">
+            <h3>Kontakt</h3>
+            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        </div>
+        <li class="tab socialiscon-wymiary">
+            <a href="#"><i class="fa fa-facebook square social-icon-wymiar"></i><span class="screen-reader">Facebook</span></a>
+        </li>
+        <li class="tab socialiscon-wymiary">
+            <a href="#"><i class="fa fa-twitter square"></i><span class="screen-reader">Twitter</span></a>
+        </li>
+        <li class="tab socialiscon-wymiary">
+            <a href="#"><i class="fa fa-google-plus square"></i><span class="screen-reader">Google+</span></a>
+        </li>
+        <li class="tab socialiscon-wymiary">
+            <a href="#"><i class="fa fa-linkedin square"></i><span class="screen-reader">LinkedIn</span></a>
+        </li>
+    </ul>
+</div>
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<!-- /container -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>
