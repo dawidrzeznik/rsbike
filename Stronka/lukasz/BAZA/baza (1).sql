@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 07 Gru 2014, 23:47
+-- Generation Time: 08 Gru 2014, 00:06
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -33,15 +33,17 @@ CREATE TABLE IF NOT EXISTS `bikes` (
   `color` varchar(255) NOT NULL,
   `data_add` date NOT NULL,
   `type` varchar(255) NOT NULL,
+  `rent_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
 -- Zrzut danych tabeli `bikes`
 --
 
-INSERT INTO `bikes` (`id`, `name`, `model`, `color`, `data_add`, `type`) VALUES
-(1, 'oo', 'tr', 'rew', '2014-12-07', 're');
+INSERT INTO `bikes` (`id`, `name`, `model`, `color`, `data_add`, `type`, `rent_id`) VALUES
+(1, 'oo', 'tr', 'rew', '2014-12-07', 're', 0),
+(2, 'ht', 'ht', 'ht', '2014-12-07', 'ht', 0);
 
 -- --------------------------------------------------------
 
@@ -51,7 +53,7 @@ INSERT INTO `bikes` (`id`, `name`, `model`, `color`, `data_add`, `type`) VALUES
 
 CREATE TABLE IF NOT EXISTS `rents` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
-  `id_user` int(10) NOT NULL,
+  `user_id` int(10) NOT NULL,
   `id_bike` int(10) NOT NULL,
   `start_date` datetime NOT NULL,
   `finish_date` datetime NOT NULL,
