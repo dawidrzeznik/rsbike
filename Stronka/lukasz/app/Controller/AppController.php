@@ -32,49 +32,28 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
 
-   /* public $helpers = array(
+public $components = array(
         'Session',
-        'Html' => array('className' => 'BoostCake.BoostCakeHtml'),
-        'Form' => array('className' => 'BoostCake.BoostCakeForm'),
-        'Paginator' => array('className' => 'BoostCake.BoostCakePaginator'),
-    );
-
-    public $components = array(
         'Auth' => array(
-            'flash' => array(
-                'element' => 'alert',
-                'key' => 'auth',
-                'params' => array(
-                    'plugin' => 'BoostCake',
-                    'class' => 'alert-error'
+            'loginRedirect' => array(
+                'controller' => 'posts',
+                'action' => 'index'
+            ),
+            'logoutRedirect' => array(
+                'controller' => 'pages',
+                'action' => 'display',
+                'home'
+            ),
+            'authenticate' => array(
+                'Form' => array(
+                    'passwordHasher' => 'Blowfish'
                 )
             )
         )
-    ); */
-
-    public $components = array(
-        'Cookie',
-        'Auth'
     );
 
     public function beforeFilter() {
-        $this->Auth->deny(); // z góry blokujemy dostęp do każdej strony
-        if (!$this->Auth->loggedIn() && $this->Cookie->read('remember_me_cookie')) { //sprawdzamy czy  użytkownik nie jest już zalogowany oraz czy istnieje ciasteczko pozwalające na zalogowanie się
-            $cookie = $this->Cookie->read('remember_me_cookie');
-            $user = $this->User->find('first', array( // sprawdzamy czy w bazie istnieje użytkownik o loginie i haśle pozostawionym w ciasteczku
-                'conditions' => array(
-                    'User.username' => $cookie['username'],
-                    'User.password' => $cookie['password']
-                )
-            ));
-
-
-            if ($user && !$this->Auth->login($user['User'])) { // jeśli te dane są nieprawidłowe przekierowanie na formularz logowania
-                $this->redirect(array('controller' => 'users', 'action' => 'login'));
-            }
-        }
-        $this->Auth->loginAction = array('controller' => 'users', 'action' => 'login'); // tutaj definiujemy akcje logowania
-        $this->Auth->logoutRedirect = array('controller' => 'users', 'action' => 'login'); // akcja wylogowania
-        $this->Auth->loginRedirect = array('controller' => 'index', 'action' => 'index'); // akcja wykonywana po poprawnym zalogowaniu się
+        $this->Auth->allow('index', 'view');
     }
+	
 }

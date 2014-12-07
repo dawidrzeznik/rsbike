@@ -1,24 +1,40 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Dawidziu
- * Date: 2014-12-04
- * Time: 14:10
- */
-class User extends AppModel {
+App::uses('AppModel', 'Model');
+App::uses('AppModel', 'Model');
+App::uses('BlowfishPasswordHasher', 'Controller/Component/Auth');
 
+
+class User extends AppModel {
+    
+    var $name = "User";
+    var $belongsTo = array("Rent");
+    
+    
     public $validate = array(
         'username' => array(
-            'rule1' => array(
-                'required' => true,
-                'rule' => 'notEmpty',
-                'message' => 'To pole jest wymagane'
-            ),
-            'password' => array(
-                'required' => true,
-                'rule' => 'notEmpty',
-                'message' => 'To pole jest wymagane'
-            ),
-        )
+            'required' => array(
+                'rule' => array('notEmpty'),
+                'message' => 'A username is required'
+            )
+			
+        ),
+        'password' => array(
+            'required' => array(
+                'rule' => array('notEmpty'),
+                'message' => 'A password is required'
+            )
+        ),
+        
     );
+	
+	
+public function beforeSave($options = array()) {
+    if (isset($this->data[$this->alias]['password'])) {
+        $passwordHasher = new BlowfishPasswordHasher();
+        $this->data[$this->alias]['password'] = $passwordHasher->hash(
+            $this->data[$this->alias]['password']
+        );
+    }
+    return true;
+}
 }
